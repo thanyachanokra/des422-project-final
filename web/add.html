@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		ul{
+			list-style-type:none;
+			margin: 0;
+			padding: 0;
+			width: 0px;
+		}
+		.jumbotron {
+			background-color: #211F24;
+			color: #fff;
+		}
+		.bg-grey {
+			background-color: #f6f6f6;
+			padding: 60px 50px;
+		}
+		.navbar {
+			background-color: #F29A1F;
+			border: 0;
+			font-size: 12px !important;
+			line-height: 1 !important;
+			letter-spacing: 4px;
+			border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+			color: #fff !important;
+			display: block;
+			width: 200px;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+			color: #F29A1F !important;
+			background-color: #fff !important;
+			display: block;
+			width: 200px;
+		}
+
+		.navbar-default .navbar-toggle {
+			border-color: transparent;
+			color: #fff !important;
+		}
+		footer .glyphicon {
+			font-size: 20px;
+			margin-bottom: 20px;
+			color: #F29A1F;
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<div id="skip">
+	</div>
+	<div id="head" class="jumbotron text-center">
+	</div>
+	<div id="menu">
+	</div>
+	</header>
+	<main id="main">
+		<div id="content" calls="container-fluid bg-grey">
+		<h2>Add content</h2>
+		<label for="type">Content Type:</label>
+		<select name="type" id="type" required>
+		</select><br>
+		<label for="title">Title</label><br>
+		<input type="text" id="title" name="title"><br>
+		<label for="content">Content</label><br>
+		<textarea id="body" name="content" rows="4" cols="50"></textarea><br>
+<div id="fileArea"></div>
+		<label for="file">Image</label><br>
+		<input type="file" id="file" name="file" multiple accept="image/png, image/gif, image/jpeg"><br>
+		<button onclick="handleAddFile()">Submit</button>
+</div>
+	</main>
+	<div id="foot">
+	</div>
+<script src="header.js"></script>
+<script src="getHead.js"></script>
+<script src="footer.js"></script>
+<script src="util.js"></script>
+	<script src="content_add.js"></script>
+</body>
+</html>

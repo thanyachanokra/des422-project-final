@@ -1,0 +1,33 @@
+import sqlite3
+
+# Connect to database test.sqlite
+conn = sqlite3.connect("test.sqlite")
+
+# Create table Contents
+conn.execute("""CREATE TABLE CONTENTS(
+ContentID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+TYPE VARCHAR(10) NOT NULL,
+TITLE VARCHAR NOT NULL,
+CONTENT VARCHAR NOT NULL
+);""")
+
+# Create table Files
+conn.execute("""CREATE TABLE FILES(
+FileID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+NAME VARCHAR NOT NULL,
+TYPE VARCHAR NOT NULL,
+PATH VARCHAR NOT NULL,
+DESCRIPTION VARCHAR NOT NULL,
+ContentID INTEGER NOT NULL,
+    FOREIGN KEY(ContentID) REFERENCES CONTENTS(ContentID)
+);""")
+
+# Create table Users
+conn.execute("""CREATE TABLE USERS(
+UserID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+USERNAME VARCHAR NOT NULL,
+PASSWORD VARCHAR NOT NULL
+);""")
+
+# Close connection
+conn.close()

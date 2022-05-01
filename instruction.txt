@@ -1,0 +1,21 @@
+1. เปิด CMD บน Windows หรือ Terminal บน Mac
+2. cd ไปที่ path ของ project
+3. ถ้าหากติดตั้ง Python แล้วพิมพ์คำสั่ง ถ้าหากยังไม่ติดตั้ง Python ให้ติดตั้ง Python ก่อน
+pip install -r requirements.txt
+หรือบน Mac
+pip3 install -r requirements.txt
+4. พิมพ์คำสั่ง
+uvicorn main:app
+เพื่อรัน backend แล้วเปิดหน้านี้ค้างไว้
+5. ไปที่ Browser แล้วพิมพ์ตรง address bar
+localhost:8000/home.html
+นี้คือทุกหน้าที่ user ธรรมดาสามารถเห็นได้
+สามารถกด link ต่างๆได้เลย
+6. ไปที่ address bar แล้วพิมพ์
+localhost:8000/login.html
+แล้วพิมพ์ userName เป็น user1 รหัสผ่านเป็น password1 และกด login
+หลังจากนี้จะสามารถ add edit delete content แต่ละหน้าได้ตามใจเลย
+Notes
+API docs
+http://localhost:8000/docs
+http://localhost:8000/redocs

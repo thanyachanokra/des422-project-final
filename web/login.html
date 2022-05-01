@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		.jumbotron {
+			background-color: #f4511e;
+			color: #fff;
+			padding: 100px 25px;
+		}
+		.bg-grey {
+			background-color: #f6f6f6;
+			padding: 60px 50px;
+		}
+		.navbar {
+			margin-bottom: 0;
+			background-color: #f4511e;
+			z-index: 9999;
+			border: 0;
+			font-size: 12px !important;
+			line-height: 1.42857143 !important;
+			letter-spacing: 4px;
+			border-radius: 0;
+		}
+
+		.navbar li a, .navbar .navbar-brand {
+			color: #fff !important;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+			color: #f4511e !important;
+			background-color: #fff !important;
+		}
+
+		.navbar-default .navbar-toggle {
+			border-color: transparent;
+			color: #fff !important;
+		}
+		footer .glyphicon {
+			font-size: 20px;
+			margin-bottom: 20px;
+			color: #f4511e;
+		}
+	</style>
+</head>
+<body>
+	<div id="main" class="container-fluid bg-grey">
+		<h1>Login</h1>
+		<form>
+			<div>
+			<label for="username">Username</label>
+			</div>
+			<div>
+			<input type="text" id="username">
+			</div>
+			<div>
+			<label for="password">Password</label>
+			</div>
+			<div>
+			<input type="password" id="password">
+			</div>
+		</form>
+		<button id="login">Login</button>
+	</div>
+	<div id="foot">
+	</div>
+<script src="login.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>
