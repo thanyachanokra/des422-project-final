@@ -21,7 +21,7 @@ var name = json.username;
 					padding-right: 10px;
 			}
 			</style>
-			<img src="./files/test_logo.png" alt="Test Logo" size="200px" width="200px">
+			<img src="./files/747720.png" alt="Test Logo" size="200px" width="200px">
 			<h1>Welcome `+name+`</h1><br>
 			<button class="button" onClick="handleLogout()">Logout</button>&nbsp;
 			<button class="button" onClick="redirect('add.html?contentType=`+contentType+`')">Add Content</button>
