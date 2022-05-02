@@ -7,17 +7,16 @@ const skip = document.getElementById("skip");
 const menu = document.getElementById("menu");
 skip.innerHTML = "<a class='skip-link screen-reader-text' href='#main'>Skip to content</a>";
 menu.innerHTML = `
-<h1>Main menu</h1>
-  <div>
+<div>
 	<div id="myNavbar">
-		<ul class="nav navbar-nav">
-		<li><a href="home.html">HOME</a></li>
-		<li><a href="about.html">ABOUT</a></li>
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="project.html">PROJECTS</a></li>
-        <li><a href="product.html">PRODUCTS</a></li>
-        <li><a href="contact.html">CONTACT Us</a></li>
-		</ul>
+		<div class="nav navbar-nav center">
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+        	<li><a href="news.html">NEWS</a></li>
+        	<li><a href="project.html">PROJECTS</a></li>
+        	<li><a href="product.html">PRODUCTS</a></li>
+        	<li><a href="contact.html">CONTACT US</a></li>
+		</div>
 	</div>
 	</div>
 `;
