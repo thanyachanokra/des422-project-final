@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>test</title>
+	<title>News</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,53 +22,77 @@
 		}
 		.bg-grey {
 			background-color: #f6f6f6;
-			padding: 60px 50px;
 		}
-		.navbar {
-			background-color: #F29A1F;
+		.navbar-nav {
 			border: 0;
-			font-size: 12px !important;
+			font-size: 20px !important;
 			line-height: 1 !important;
-			letter-spacing: 4px;
 			border-radius: 0;
+			padding-left: 17px;
+			padding-right: 17px;
 		}
 
 		.navbar li a, .navbar .navbar-brand {
 			color: #fff !important;
 			display: block;
-			width: 200px;
 		}
 
 		.navbar-nav li a:hover, .navbar-nav li.active a {
 			color: #F29A1F !important;
 			background-color: #fff !important;
 			display: block;
-			width: 200px;
 		}
 
 		.navbar-default .navbar-toggle {
 			border-color: transparent;
 			color: #fff !important;
 		}
-		footer .glyphicon {
-			font-size: 20px;
+		.footer {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			background-color: #211F24;
+			color: #fff;
+		}
+		
+		.row {
+			float: none;
+			margin: 0 auto;
+			margin-top: -10px;
 			margin-bottom: 20px;
-			color: #F29A1F;
+		}
+
+		.page-title {
+			padding-left: 30px;
+			background-color: lightgray;
+			margin-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.skip {
+			text-align: right;
+			padding-top: 10px;
+			padding-right: 24px;
+			font-size: 20px;
+			background-color: #211F24;
 		}
 	</style>
 </head>
 <body>
-	<div id="skip">
+	<div id="skip" class="skip">
 	</div>
 	<div id="head" class="jumbotron text-center">
 	</div>
-	<div id="menu">
+	<div id="menu" class="row">
 	</div>
 	<main id="main">
-		<div id="content" data-content-type="news" class="container-fluid bg-grey">
+		<div class="bg-grey">
+			<div class="page-title row"><h1>News</h1></div>
+			<div id="content" data-content-type="news" class="container-fluid">
+			</div>
 		</div>
 	</main>
-	<div id="foot">
+	<div id="foot" class="footer">
 	</div>
 <script src="header.js"></script>
 <script src="body.js"></script>
