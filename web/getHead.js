@@ -13,10 +13,18 @@ return;
 response.json().then(function(json){
 var name = json.username;
 			head.innerHTML = `
-				<img src="./files/test_logo.png" alt="Test Logo" size="250px" width="250px">
-				<h1>Welcome `+name+`</h1>
-				<button style="color:black;" onClick="handleLogoutForGetHead()">Logout</button>
-				<button style="color:black;" onClick="redirect('add.html?contentType=`+contentType+`')">Add Content</button>
+			<style>
+				.button	{
+					color: black;
+					font-size: 20px;
+					padding-left: 10px;
+					padding-right: 10px;
+			}
+			</style>
+			<img src="./files/747720.png" alt="Test Logo" size="200px" width="200px">
+			<h1>Welcome `+name+`</h1><br>
+			<button class="button" onClick="handleLogout()">Logout</button>&nbsp;
+			<button class="button" onClick="redirect('add.html?contentType=`+contentType+`')">Add Content</button>
 			`;
 })
 })

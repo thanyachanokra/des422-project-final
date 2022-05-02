@@ -4,7 +4,7 @@ const file = document.getElementById("file");
 const fileArea = document.getElementById("fileArea");
 var fileList = [];
 const type = document.getElementById("type");
-const typeList = ["home", "product", "news", "project", "contact", "about"];
+const typeList = ["home", "about", "news", "project", "product", "contact"];
 var description = [];
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -104,10 +104,12 @@ var remove = document.createElement("button");
 remove.setAttribute("onClick", "removeFile("+i+")");
 remove.innerHTML = "Remove "+fileList[i].name;
 div.appendChild(label);
+div.innerHTML += '&nbsp; &nbsp;';
 div.appendChild(input);
+div.innerHTML += '&nbsp; &nbsp;';
 div.appendChild(remove);
 fileArea.appendChild(div);
-description.push(input);
+description.push(document.getElementById("file-"+(i+1)));
 }
 }
 file.addEventListener("change", addFile);
